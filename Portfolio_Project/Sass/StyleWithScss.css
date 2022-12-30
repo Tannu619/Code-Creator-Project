@@ -1,0 +1,343 @@
+.FormSubmitionClass {
+  transform: translate(-2rem, -2rem);
+  width: 32rem;
+  height: 35rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.HOne {
+  font-size: 4rem;
+  font-family: fantasy;
+  font-weight: 600;
+}
+
+.POne {
+  font-size: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+  font-family: fantasy;
+  font-weight: 500;
+  color: black;
+}
+
+.BOne {
+  width: 3rem;
+  height: 4rem;
+  background-color: #020202;
+  color: #f0467e;
+}
+
+body {
+  background-color: #020202;
+}
+
+.LINE {
+  width: 44rem;
+  height: 0.7rem;
+  background: linear-gradient(to right, red, blue, green, black);
+  opacity: 10;
+}
+
+.WhyUsBox {
+  height: 30rem;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, black, #262626, #262525, #020202);
+}
+.WhyUsBox .heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+  flex-direction: column;
+}
+.WhyUsBox .heading h1 {
+  font-size: 4rem;
+  font-family: -webkit-body;
+  background: linear-gradient(to right, #e7081d, #e7081d, orange, #63d30e, #2323db);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.WhyUsBox .heading .Causes {
+  width: 100%;
+  height: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.WhyUsBox .heading .Causes .Cause1,
+.WhyUsBox .heading .Causes .Cause2,
+.WhyUsBox .heading .Causes .Cause3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s;
+}
+.WhyUsBox .heading .Causes .Cause1 h3,
+.WhyUsBox .heading .Causes .Cause2 h3,
+.WhyUsBox .heading .Causes .Cause3 h3 {
+  background: linear-gradient(45deg, #ff0047, #85e966, #e9e934);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-family: fantasy;
+  font-size: 2rem;
+}
+.WhyUsBox .heading .Causes .Cause1 p,
+.WhyUsBox .heading .Causes .Cause2 p,
+.WhyUsBox .heading .Causes .Cause3 p {
+  background: linear-gradient(45deg, #ff0047, #85e966, #e9e934);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-family: monospace;
+  font-size: 1rem;
+  margin: 1rem;
+  text-align: center;
+}
+.WhyUsBox .heading .Causes .Cause1 .img,
+.WhyUsBox .heading .Causes .Cause2 .img,
+.WhyUsBox .heading .Causes .Cause3 .img {
+  width: 5rem;
+  height: 5rem;
+  background: url("https://img.icons8.com/pastel-glyph/64/d7354b/last-24-hours.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.WhyUsBox .heading .Causes .Cause2 .img {
+  background: url("https://img.icons8.com/external-itim2101-fill-itim2101/80/d7354b/external-money-currency-and-money-itim2101-fill-itim2101-1.png");
+}
+.WhyUsBox .heading .Causes .Cause3 .img {
+  background: url("https://img.icons8.com/external-smashingstocks-detailed-outline-smashing-stocks/80/d7354b/external-services-business-management-smashingstocks-detailed-outline-smashing-stocks.png");
+}
+.WhyUsBox .img {
+  width: 30rem;
+  height: 30rem;
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://i.pinimg.com/originals/9e/be/f7/9ebef77525b4ee940b24e217b17d3257.gif");
+}
+
+.OurStratgyBox {
+  border: 1px solid black;
+  height: 10rem;
+}
+
+.clock {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  width: 100%;
+  height: 30rem;
+}
+.clock .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.clock .text .MyForm {
+  width: 60%;
+  height: 37rem;
+  border: 1rem solid #f0467e;
+  border-radius: 2rem;
+  transition: 1s;
+  padding: 2rem;
+  background-color: white;
+  position: relative;
+}
+.clock .text .MyForm .ConsultationForm {
+  margin-top: 2rem;
+}
+.clock .text .MyForm .ConsultationForm input {
+  width: 100%;
+  height: 3rem;
+  font-size: 1.4rem;
+  color: #f0467e;
+  margin: 0.5rem;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #f0467e;
+  outline: none;
+}
+.clock .text .MyForm .ConsultationForm input:focus ~ label,
+.clock .text .MyForm .ConsultationForm input:valid ~ label {
+  transform: translateY(-4.5rem);
+  left: 10%;
+  color: black;
+  background-color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.clock .text .MyForm .ConsultationForm label {
+  color: #f0467e;
+  position: absolute;
+  left: 13%;
+  transform: translateY(-2.5rem);
+  transition: 0.5s;
+}
+.clock .text .MyForm .ConsultationForm textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #f0467e;
+  font-size: 1.4rem;
+  color: #f0467e;
+  margin: 0.5rem;
+  outline: none;
+  margin-top: 2rem;
+}
+.clock .text .MyForm .ConsultationForm textarea:focus ~ label,
+.clock .text .MyForm .ConsultationForm textarea:valid ~ label {
+  transform: translateY(-9rem);
+  left: 10%;
+  color: #f0467e;
+  background-color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.clock .text .MyForm .ConsultationForm #SubmitButton {
+  background-color: #f0467e;
+  color: white;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  border: transparent;
+}
+.clock .text .MyForm .ConsultationForm #UName {
+  margin-top: 1rem;
+}
+.clock .text h3 {
+  background: linear-gradient(45deg, #ff0047, #ee518d, #e70f86);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-family: fantasy;
+  font-size: 3rem;
+  transform: skew(5deg, 7deg);
+}
+.clock .text p {
+  font-family: -webkit-body;
+  font-size: 2.2rem;
+  background: linear-gradient(to right, #e7081d, #e7081d, rgb(255, 0, 157), #f0467e, #e917d7);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  transform: translateY(5.5rem);
+  border-bottom: 1px solid #f0467e;
+  z-index: 15;
+}
+.clock .clock .Myclock {
+  height: 30rem;
+  width: 30rem;
+  border: 1em solid #ed2866;
+  border-radius: 50%;
+  background-image: url("https://illustoon.com/photo/5054.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transform: translateX(-4rem);
+}
+.clock .clock .Myclock #hourhand {
+  width: 0.6rem;
+  height: 5rem;
+  background-color: #ed2866;
+}
+.clock .clock .Myclock #minutehand {
+  width: 0.5rem;
+  height: 7rem;
+  background-color: #ed2866;
+}
+.clock .clock .Myclock #secondhand {
+  width: 0.2rem;
+  height: 8rem;
+  background-color: #ed2866;
+}
+.clock .clock .Myclock #dot {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+}
+.clock .clock .Myclock #hourhand,
+.clock .clock .Myclock #minutehand,
+.clock .clock .Myclock #secondhand {
+  position: absolute;
+  bottom: 50%;
+  transform-origin: bottom;
+  border-radius: 10px;
+}
+
+.AfterFormBox {
+  width: 100%;
+  height: 30rem;
+  background: linear-gradient(45deg, #131212, #111111, #0c0c0b);
+}
+
+.LetsTalk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 65%;
+  height: 15rem;
+  background: linear-gradient(45deg, #e9e934, #ff0047, #9ed6ed);
+  margin-left: 18%;
+  border-radius: 3rem;
+  box-shadow: 1px 1px 6px white;
+  cursor: pointer;
+  transform: translateY(-4rem);
+  transition: 2s;
+}
+.LetsTalk:hover {
+  background: linear-gradient(45deg, #ff0047, #85e966, #e9e934);
+}
+.LetsTalk p {
+  font-family: fantasy;
+  font-weight: 200;
+  color: #020202;
+  font-size: 3rem;
+}
+.LetsTalk h2 {
+  font-family: fantasy;
+  font-weight: 200;
+  color: #020202;
+  font-size: 5rem;
+}
+
+.popup {
+  background: rgba(0, 0, 0, 0.6);
+  width: 30%;
+  height: 30%;
+  left: 0;
+  bottom: 0;
+  /* top: 0; */
+  position: fixed;
+  box-shadow: 1px 1px 4px white;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: none;
+  transition: 3s;
+  color: white;
+  text-align: center;
+}
+.popup h1 {
+  width: 5%;
+  margin-top: -2rem;
+}
+.popup p {
+  font-size: 2rem;
+  line-height: 0.2rem;
+}
+.popup button {
+  height: 2rem;
+  border: 1px solid transparent;
+  background-color: blue;
+  color: white;
+  width: 40%;
+  border-radius: 2rem;
+}/*# sourceMappingURL=StyleWithScss.css.map */

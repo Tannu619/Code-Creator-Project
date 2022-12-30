@@ -1,0 +1,277 @@
+@-webkit-keyframes rotateRing {
+  0% {
+    transform: rotate(0deg);
+    box-shadow: 1px 5px 2px #e65c00;
+  }
+  50% {
+    transform: rotate(180deg);
+    box-shadow: 1px 5px 2px #18b201;
+  }
+  100% {
+    transform: rotate(360deg);
+    box-shadow: 1px 5px 2px #df1759;
+  }
+}
+@keyframes rotateRing {
+  0% {
+    transform: rotate(0deg);
+    box-shadow: 1px 5px 2px #e65c00;
+  }
+  50% {
+    transform: rotate(180deg);
+    box-shadow: 1px 5px 2px #18b201;
+  }
+  100% {
+    transform: rotate(360deg);
+    box-shadow: 1px 5px 2px #df1759;
+  }
+}
+@-webkit-keyframes loadingHiding {
+  50% {
+    color: #e6e3a0;
+  }
+}
+@keyframes loadingHiding {
+  50% {
+    color: #e6e3a0;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#BODY1 {
+  margin: 0;
+  padding: 0;
+  padding-top: 7rem;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#BODY1 #preloader {
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+#BODY1 #preloader .circle {
+  position: absolute;
+  width: 15rem;
+  height: 15rem;
+  /* border: 1px solid white; */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  z-index: 100;
+  -webkit-animation: rotateRing 2s linear infinite;
+          animation: rotateRing 2s linear infinite;
+}
+#BODY1 #preloader .loading p {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: black;
+  -webkit-animation: loadingHiding 2s ease-in-out infinite;
+          animation: loadingHiding 2s ease-in-out infinite;
+}
+#BODY1 .navbar {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 5rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  /* background: linear-gradient(to left, #151515, #313131, #444444); */
+  box-shadow: 0px 1px 8px #7474e1;
+  z-index: 50;
+  POSITION: fixed;
+  top: 0;
+  left: 0;
+}
+#BODY1 .navbar .col-1 {
+  /*Options part*/
+  /* border: 1px solid white; */
+  justify-content: center;
+  align-items: center;
+}
+#BODY1 .navbar #LOGO {
+  /*Logo img part*/
+  height: 5.5rem;
+  background-image: url("MyLogo1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1rem;
+  box-shadow: 0px 1px 8px #7474e1;
+}
+#BODY1 .navbar .col-7 {
+  /* menu button */
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background: linear-gradient(90deg, red, orange, #70e136, #0f9bff);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+#BODY1 .navbar .navbarItems ul {
+  list-style: none;
+  display: flex;
+}
+#BODY1 .navbar .navbarItems ul li a {
+  text-decoration: none;
+  margin: 1.3rem;
+  font-family: fantasy;
+  font-size: 1rem;
+}
+#BODY1 .navbar .navbarItems ul li:hover a {
+  border-bottom: 2px solid #e6e3a0;
+  color: #e6e3a0;
+}
+#BODY1 .navbar .navbarItems ul li:active a {
+  border-bottom: 2px solid #e6e3a0;
+}
+#BODY1 .navbar #menuOutline {
+  /* menu button */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -1rem;
+}
+#BODY1 .navbar #menuOutline #menuIcon {
+  /* menu button icon*/
+  width: 4rem;
+  height: 3rem;
+  color: #7474e1;
+  cursor: pointer;
+}
+#BODY1 .WhatWeDo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+#BODY1 .WhatWeDo h1 {
+  font-size: 3.3rem;
+  font-family: -webkit-body;
+  background: linear-gradient(to right, #e7081d, #e7081d, orange, #63d30e, #2323db);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+#BODY1 .WhatWeDo .LINE {
+  width: 68rem;
+  background: linear-gradient(to right, red, blue, green);
+  opacity: 10;
+}
+#BODY1 .WhatWeDo .Webimage {
+  width: 90%;
+  height: 30rem;
+  background-color: #020202;
+  border: 1px solid black;
+}
+#BODY1 .TTTbody {
+  width: 90vw;
+  height: 27rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 2rem;
+}
+#BODY1 .TTTbody .intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9ecc00;
+}
+#BODY1 .TTTbody .intro .logo {
+  background-color: #9ecc00;
+  width: 100%;
+  height: 65%;
+  border-radius: 50%;
+  background-image: url("https://m.media-amazon.com/images/I/411RqsooQ3L.png");
+  background-position: center;
+  background-size: cover;
+  transform: rotate(0deg);
+  transition: 0.8s;
+}
+#BODY1 .TTTbody .intro .logo:hover {
+  transform: rotate(360deg);
+}
+#BODY1 .TTTbody .box {
+  background-color: black;
+  padding: 0.1rem;
+}
+#BODY1 .TTTbody .box .Slider {
+  width: 95%;
+  height: 95%;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0.1rem 0.1rem 2rem #9ecc01;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+#BODY1 .TTTbody .box .Slider p {
+  color: #9ecc01;
+  font-size: 2.4rem;
+  font-family: chiller;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1;
+}
+#BODY1 .TTTbody .box .Slider button {
+  width: 10rem;
+  height: 4rem;
+  border: 1px solid transparent;
+  background: #212628;
+  border-radius: 2rem;
+  color: #9ecc00;
+  font-size: 2rem;
+  font-family: chiller;
+  font-weight: 600;
+}
+#BODY1 .extra {
+  height: 10rem;
+}
+#BODY1 .LetsTalk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 65%;
+  height: 15rem;
+  background: linear-gradient(45deg, #e9e934, #ff0047, #9ed6ed);
+  border-radius: 3rem;
+  box-shadow: 1px 1px 6px white;
+  cursor: pointer;
+  transform: translateY(-4rem);
+  transition: 2s;
+}
+#BODY1 .LetsTalk:hover {
+  background: linear-gradient(45deg, #ff0047, #85e966, #e9e934);
+}
+#BODY1 .LetsTalk p {
+  font-family: fantasy;
+  font-weight: 200;
+  color: #020202;
+  font-size: 3rem;
+}
+#BODY1 .LetsTalk h2 {
+  font-family: fantasy;
+  font-weight: 200;
+  color: #020202;
+  font-size: 5rem;
+}/*# sourceMappingURL=ServicesStyle.css.map */

@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+#preloader {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+#preloader .circle {
+    position: absolute;
+    width: 15rem;
+    height: 15rem;
+    /* border: 1px solid white; */
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 100;
+    animation: rotateRing 2s linear infinite;
+}
+
+@keyframes rotateRing {
+    0% {
+        transform: rotate(0deg);
+        box-shadow: 1px 5px 2px #e65c00;
+    }
+
+    50% {
+        transform: rotate(180deg);
+        box-shadow: 1px 5px 2px #18b201;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        box-shadow: 1px 5px 2px #df1759;
+    }
+}
+
+#preloader .loading p {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    animation: loadingHiding 2s ease-in-out infinite;
+}
+
+@keyframes loadingHiding {
+    50% {
+        color: #e6e3a0;
+    }
+}
+
+/* Preloader ending*/
+
+/********************************************* navbar **************/
+
+.navbar {
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 5rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* background: linear-gradient(to left, #151515, #313131, #444444); */
+    box-shadow: 0px 1px 8px #7474e1;
+    z-index: 50;
+    POSITION: fixed;
+    top: 0;
+    left: 0;
+}
+
+.col-1 {
+    /*Options part*/
+    /* border: 1px solid white; */
+    justify-content: center;
+    align-items: center;
+}
+
+#LOGO {
+    /*Logo img part*/
+    height: 5.5rem;
+    background-image: url("MyLogo1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem;
+    box-shadow: 0px 1px 8px #7474e1;
+}
+
+.col-7 {
+    /* menu button */
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background: linear-gradient(90deg, red, orange, #70e136, #0f9bff);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.navbarItems ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbarItems ul li a {
+    text-decoration: none;
+    margin: 1.3rem;
+    font-family: fantasy;
+    font-size: 1rem;
+}
+
+.navbarItems ul li a:hover {
+    border-bottom: 2px solid #e6e3a0;
+    color: #e6e3a0;
+}
+
+.navbarItems ul li a:active {
+    border-bottom: 2px solid #e6e3a0;
+}
+
+#menuOutline {
+    /* menu button */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -1rem;
+
+}
+
+#menuOutline #menuIcon {
+    /* menu button icon*/
+    width: 4rem;
+    height: 3rem;
+    color: #7474e1;
+    cursor: pointer;
+}
+
+/************************** Slider  *********************/
+
+.MySlider {
+    height: 46rem;
+    /* border: 1px solid white; */
+    width: 100%;
+    background-color: black;
+    background-attachment: fixed;
+    margin: 0px;
+}
+
+.MySlider img {
+    box-shadow: 1px 2px 6px #e6e3a0;
+    z-index: -10;
+}
+
+.MySlider 
+.Mycaption,
+.Mycaption2,
+.Mycaption3
+{
+    transform: translateY(-11rem);
+    line-height: 1;
+}
+
+.MySlider .Mycaption h1,
+.Mycaption2 h1 {
+    font-family: fantasy;
+    font-size: 7rem;
+    font-weight: 200;
+    color: red;
+    cursor: pointer;
+    background: linear-gradient(90deg, green, orange, red, blue);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.MySlider .Mycaption3 h1 {
+    font-family: fantasy;
+    font-weight: 200;
+    color: red;
+    cursor: pointer;
+    background: linear-gradient(90deg, green, orange, red, blue);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 6rem;
+}
+.MySlider .Mycaption p,
+.Mycaption2 p , .Mycaption3 p{
+    font-family: fantasy;
+    font-size: 4rem;
+    color: black;
+}
+.indicator {
+    transform: translateY(-100px);
+}
+
+/* slider end  */
+
+#mysvg {
+    margin-left: -1.5rem;
+    background-color: black;
+    width: 101.8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+svg {
+    /* z-index: -10; */
+    height: 18.89rem;
+    /* position: absolute; */
+    position: relative;
+    transform: translateY(-17rem);
+
+}
+
+.logoIMG {
+    background: url(fullLogo.png);
+    /* position: relative; */
+    width: 22.5rem;
+    height: 19.5rem;
+    margin-top: -24rem;
+    z-index: 10;
+    transform: translateX(-85px);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.KnowLanguageDiv {
+    width: 100%;
+    height: 35rem;
+    background: linear-gradient(45deg, black, #262626, #262525, #020202);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.KnowLanguageDiv .heading {
+    color: white;
+    font-size: 4rem;
+    font-family: -webkit-body;
+    background: linear-gradient(90deg, #e7081d, orange, #63d30e, #2323db);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.KnowLanguageDiv .technologies {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 0.5rem;
+    /* border:1px solid white; */
+}
+
+.KnowLanguageDiv .ViewMoreButton {
+    width: 11rem;
+    margin: 1rem;
+    padding: 0rem;
+    font-size: 1.2rem;
+    line-height: 1;
+    font-family: initial;
+    background: linear-gradient(90deg, #e7081d, orange, #63d30e, #2323db);
+    border-radius: 2rem;
+    border: transparent;
+    text-transform: uppercase;
+    transform: translateY(0rem);
+
+}
+
+.KnowLanguageDiv .ViewMoreButton:hover {
+    background: linear-gradient(45deg, #ff0047, #85e966, #e9e934);
+}
+
+.KnowLanguageDiv .technologies2 {
+    margin-top: 1rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    /* border: 1px solid white; */
+    visibility: hidden;
+}
+
+.KnowLanguageDiv .technologies .one,
+.two,
+.three,
+.four,
+.five,
+.one1,
+.two1,
+.three1,
+.four1,
+.five1,
+.one2,
+.two2,
+.three2,
+.four2,
+.five2 {
+    /* border:1px solid white; */
+    background: linear-gradient(45deg, black, #262626, #262525, #020202);
+    color: white;
+    font-size: 2rem;
+    font-family: fantasy;
+    letter-spacing: 0.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.KnowLanguageDiv .technologies .one {
+    color: #ff6d00;
+}
+
+.KnowLanguageDiv .technologies .two {
+    color: #039be5;
+}
+
+.KnowLanguageDiv .technologies .three {
+    color: #ffff00;
+}
+
+.KnowLanguageDiv .technologies .four {
+    color: white;
+}
+
+.KnowLanguageDiv .technologies .five {
+    color: #f06292;
+}
+
+.KnowLanguageDiv .technologies2 .one1 {
+    color: #228be6;
+}
+
+.KnowLanguageDiv .technologies2 .two1 {
+    color: #ffc911;
+}
+
+.KnowLanguageDiv .technologies2 .three1 {
+    color: #4db6ac;
+}
+
+.KnowLanguageDiv .technologies2 .four1 {
+    color: #f44336;
+}
+
+.KnowLanguageDiv .technologies2 .five1 {
+    color: #219b62;
+}

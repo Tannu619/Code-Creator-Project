@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCreators</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- My css -->
+    <link rel="stylesheet" href="Start_Page.css">
+    <link rel="stylesheet" href="Sass/StyleWithScss.css">
+
+    <!-- Jquery -->
+    <script src="jquery-3.6.1.min.js"></script>
+    <!-- for icons -->
+    <!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
+
+    <!-- font -->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Abel" />
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' />
+
+</head>
+
+<body>
+    <!-- preloader -->
+    <div class="container-fluid" id="preloader">
+        <div class="circle"></div>
+        <div class="loading">
+            <p>Loading...</p>
+        </div>
+    </div>
+
+    <!-- navbar -->
+    <div class="container-fluid row navbar " id="JSNAVBAR">
+        <div class="col-3" id="LOGO"></div>
+        <div class="col-7 navbarItems">
+            <ul>
+                <li><a href="Start_Page.html">Home</a></li>
+                <li><a href="ServicesPage/Services.html">Services</a></li>
+                <li><a href="#">Hire Experts</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Join Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="col-1" id="menuOutline">
+            <img src="https://cdn3d.iconscout.com/3d/premium/thumb/web-developer-4506461-3738664.png" width="70rem"
+                height="70rem">
+        </div>
+    </div>
+
+    <!-- slider -->
+
+    <div id="slider" class="container-fluid carousel slide MySlider" data-bs-ride="carousel">
+        <div class="carousel-inner ImagesinnerSlider">
+            <div class="carousel-item active">
+                <img src="https://i0.wp.com/www.techquintal.com/wp-content/uploads/2021/08/Network-Technology.jpg?fit=1366%2C768&ssl=1"
+                    class="d-block w-100" height="750rem">
+
+                <div class="carousel-caption Mycaption">
+                    <p>Welcome</p>
+                    <p>to</p>
+                    <h1>Code Creators</h1>
+                    <p>unique coders</p>
+                </div>
+            </div>
+            <div class="carousel-item ">
+                <img src="https://assets-global.website-files.com/5e39e095596498a8b9624af1/5f44b1d18a8945605abb0351_Lottie.jpg"
+                    class="d-block w-100" height="750rem">
+
+                <div class="carousel-caption Mycaption2">
+                    <p>We Design and Develop</p>
+                    <p>World-Class Digital Products to</p>
+                    <h1>Drive Results</h1>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://loyalty360.org/getattachment/090efbe9-ab57-4d99-a278-1a75fd5cf29b/image"
+                    class="d-block w-100" height="750rem">
+
+                <div class="carousel-caption Mycaption3">
+                    <p>Our team is Dedicated to delever</p>
+                    <h1>Exceptional Customer Experience</h1>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://lform.com/cms/resources/media/2021/01/7-web-development-trends-for-2021.jpg"
+                    class="d-block w-100" height="750rem">
+
+                <div class="carousel-caption Mycaption">
+                    <p>Don’t miss out on your chance to stay up on the</p>
+                    <h1>Latest Trends.</h1>
+                </div>
+            </div>
+        </div>
+        <!-- indicator -->
+        <div class="carousel-indicators indicator">
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="3"></button>
+        </div>
+
+        <!-- buttons -->
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <div class="container-fluid" id="mysvg">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="black" fill-opacity="1"
+                d="M0,288L48,240C96,192,192,96,288,74.7C384,53,480,107,576,149.3C672,192,768,224,864,213.3C960,203,1056,149,1152,117.3C1248,85,1344,75,1392,69.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+        <div class="logoIMG"></div>
+    </div>
+
+    <!-- css using scss -->
+    <div class="WhyUsBox">
+        <div class="heading">
+            <h1>Why Work With Us?</h1>
+            <hr class="LINE">
+            <div class="Causes">
+                <div class="Cause1">
+                    <h3 class="CauseH3">24/7</h3>
+                    <h3 class="CauseH3">Support</h3>
+                    <p class="CauseP">A dedicated account manager supporting you 6 days a week.</p>
+                    <div id="CauseImg1" class="img"></div>
+                </div>
+                <div class="Cause2">
+                    <h3 class="CauseH3">100% Money Back</h3>
+                    <h3 class="CauseH3">Guarantee</h3>
+                    <p class="CauseP">If you are not satisfied with the design, we refund entire 100% amount.</p>
+                    <div id="CauseImg2" class="img"></div>
+                </div>
+                <div class="Cause3">
+                    <h3 class="CauseH3">Value Added</h3>
+                    <h3 class="CauseH3">Services</h3>
+                    <p class="CauseP">Not just landing pages, we provide many value added services that will help you in marketing</p>
+                    <div id="CauseImg3" class="img"></div>
+                </div>
+            </div>
+        </div>
+        <div class="img"></div> 
+    </div>
+
+    <!-- <div class="OurStratgyBox">
+        <div class="heading">Our Ultrafast Delivery System</div>
+        <hr class="LINE">
+    </div> -->
+
+    <!-- css using css -->
+    <div class="KnowLanguageDiv">
+        <div class="heading">Technologies we use</div>
+        <hr class="LINE">
+        <div class="technologies">
+            <div class="one"><img src="https://img.icons8.com/color/100/000000/html-5--v1.png" />HTML 5</div>
+            <div class="two"><img src="https://img.icons8.com/color/105/000000/css3.png" />CSS 3</div>
+            <div class="three"><img src="https://img.icons8.com/ios-filled/90/ffff00/javascript.png" />JavaScript</div>
+            <div class="four"><img src="https://img.icons8.com/color/105/000000/bootstrap.png" />BOOTSTRAP</div>
+            <div class="five"><img src="https://img.icons8.com/color/120/000000/sass.png" />SCSS</div>
+        </div>
+        <button class="ViewMoreButton">View More <br> <img
+                src="https://img.icons8.com/metro/26/000000/sort-down.png" /></button>
+        <div class="technologies2">
+            <div class="one1"><img src="https://img.icons8.com/ios-filled/90/228BE6/jquery.png" />Jquery</div>
+            <div class="two1"><img src="https://img.icons8.com/fluency/100/000000/python.png" />PYTHON</div>
+            <div class="three1"><img src="https://img.icons8.com/color/96/000000/c-plus-plus.png" />&nbsp; C++</div>
+            <div class="four1"><img src="https://img.icons8.com/color/144/000000/java-coffee-cup-logo--v1.png" />JAVA
+            </div>
+            <div class="five1"><img src="https://img.icons8.com/fluency/110/000000/node-js.png" />Node JS</div>
+        </div>
+    </div>
+
+    <!-- css using scss -->
+    <div class="clock">
+        <div class="text">
+            <h3>So, For What You Are Waiting...?</h3>
+            <h3>Time Is Going</h3>
+
+            <p id="FormTitle">Get a Free Consultation Now!</p>
+            <div class="MyForm" id="MyForm">
+                <form class="ConsultationForm" id="MyCForm">
+                    <div class="InputNameBox">
+                        <input type="text" name="UName" id="UName" required autocomplete="off">
+                        <label for="UName">Name</label>
+                    </div>
+
+                    <div class="InputEmailBox">
+                        <input type="text" name="Email" id="Email" required> 
+                        <label for="Email">Email</label>
+                    </div>
+
+                    <div class="InputNumberBox">
+                        <input type="text" name="Number" id="Number" required> 
+                        <label for="Number">Number</label>
+                    </div>
+
+                    <div class="city">
+                        <input type="text" name="City" id="City" required>
+                        <label for="City">City</label>
+                    </div>
+
+                    <div class="message">
+                        <textarea name="Message" id="Message" rows="3" required></textarea>
+                        <label for="Message">Message</label>
+                    </div>
+
+                    <input type="button" value="Submit" id="SubmitButton">
+                </form>
+            </div>
+        </div>
+        <div class="clock">
+            <div class="Myclock">
+                <div id="secondhand"></div>
+                <div id="minutehand"></div>
+                <div id="hourhand"></div>
+                <div id="dot"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="AfterFormBox">
+
+    </div>
+
+    <!-- css using scss -->
+    <div class="LetsTalk">
+        <p>Let’s Talk Business!</p>
+        <h2>Start Work Together</h2>
+    </div>
+
+    <div class="popup">
+        <h1 id="popupCross"><img src="https://img.icons8.com/material-sharp/24/FFFFFF/multiply.png"/></h1>
+        <p>Hello there ..!</p>
+        <p>Start a conversation  
+            <img src="https://img.icons8.com/external-others-nixx-design/67/FFFFFF/external-conversation-marketing-others-nixx-design.png"/>    
+        </p>
+        <button><img src="https://img.icons8.com/small/16/FFFFFF/filled-sent.png"/> send a message</button>
+    </div>
+</body>
+
+<script src="Project_JS.js"></script>
+
+</html>

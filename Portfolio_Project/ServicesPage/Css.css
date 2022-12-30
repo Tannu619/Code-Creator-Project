@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#Headtitle {
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(158 204 0);
+}
+#Headtitle h1 {
+    color: white;
+    font-family: Chiller;
+    font-size: 4rem;
+    font-weight: bold;
+}
+#Headtitle .logo {
+    width: 4rem;
+    height: 4rem;
+    background-image: url(Logo.png);
+    background-size: cover;
+    margin-right: 3rem;
+}
+
+.Main {
+    width: 100%;
+    height: 25rem;
+    background-color: rgb(51 51 51);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Main .gameplay {
+    width: 50%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 0.5rem;
+    row-gap: 0.5rem;
+}
+
+.Main .gameplay .Box1 {
+
+    background-color: rgb(51,51,51);
+    border: 1px solid white;
+    border-radius: 4px;
+    display: grid;
+    place-items: center;
+
+    font-family: Chiller;
+    font-size: 4rem;
+    color: rgb(158 204 0);
+    font-weight: bold;
+    
+}
+
+.Main .gamescore {
+    width: 40%;
+    height: 80%;
+    color: white;
+    font-family: Chiller;
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Main .gamescore .playerX , .playerY {
+    border-bottom: 2px solid rgb(158 204 0);
+}
+
+button {
+    background-color:rgb(158 204 0);
+    color: white;
+    font-family: Chiller;
+    font-size: 3rem;
+    font-weight: bold;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+}
+
+.Main .gamescore .winner {
+    width: 24rem;
+    height: 4rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.2rem;
+    padding-left: 4rem;
+}
+
+.Main .gamescore .buttonbox {
+    padding-top: 1rem;
+    padding-left: 2rem;
+    line-height: 5rem;
+}
+#Newgame {
+    width: 19rem;
+    height: 4rem;
+
+}
+#Restart {
+    height: 4rem;
+    width: 9rem;
+}
+#Start {
+    height: 4rem;
+    width: 9rem;
+}
